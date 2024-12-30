@@ -2,6 +2,7 @@ import { ArrowRightIcon } from "lucide-react";
 import { ReactNode } from "react";
 import { Button } from "../ui/button";
 import { cn } from "@/lib/utils";
+import SpringyText from "../springy-text/SpringyText";
 
 interface SectionProps {
   title: string;
@@ -23,9 +24,10 @@ const Section = ({
   return (
     <section className={cn("", className)}>
       <header className={cn("flex items-center mb-5", headerClassName)}>
-        <h4 className="scroll-m-20 text-xl font-semibold tracking-tight opacity-95">
+        {/* <h4 className="scroll-m-20 text-xl font-semibold tracking-tight opacity-95">
           {title}
-        </h4>
+        </h4> */}
+        <SpringyText className="justify-center text-2xl" text={title} />
 
         {!viewAllLink ? null : (
           <Button

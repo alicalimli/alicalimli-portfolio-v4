@@ -2,7 +2,9 @@ import {
   SiFigma,
   SiFirebase,
   SiNextdotjs,
+  SiReact,
   SiRedux,
+  SiSupabase,
   SiTailwindcss,
   SiTypescript,
 } from "react-icons/si";
@@ -34,7 +36,7 @@ export const socialLinks = [
   },
 ];
 
-export const projects: ItemProps[] = [
+export const opprojects: ItemProps[] = [
   {
     title: "ACMessenger",
     thumbnail: "/projects/acmessenger.png",
@@ -65,10 +67,44 @@ export const projects: ItemProps[] = [
   },
 ];
 
+export const projects: ItemProps[] = [
+  {
+    title: "SRSWTI",
+    thumbnail:
+      "https://firebasestorage.googleapis.com/v0/b/webdev-visuals.appspot.com/o/misc%2Fsrswti-home.webp?alt=media&token=612beab7-c08a-488a-827f-f0b28bad7588",
+    description:
+      "A Fullstack Chatapp that I've built to learn more about React and its popular libraries like redux, and also learn to use Firebase.",
+    cta: "Visit Website",
+    role: "Full Stack Development",
+    link: "https://ac-messenger-p.web.app/",
+  },
+  {
+    title: "MagicNotes",
+    thumbnail:
+      "https://firebasestorage.googleapis.com/v0/b/webdev-visuals.appspot.com/o/misc%2Fmagicnotes%20(1).webp?alt=media&token=51ea4c23-39e4-45b2-aeba-3b0451ceb033",
+    description:
+      "A Vanilla JS Project that I have built to deepen my knowledge about HTML, CSS and JavaScript and practice consuming API’s as well.",
+    cta: "Visit Website",
+    role: "Full Stack Development",
+    link: "https://moviematrix.netlify.app/",
+  },
+  {
+    title: "WebDevVisuals",
+    description:
+      "A platform to learn tips & tricks that would take your web dev skills to the next level all in one place.",
+    cta: "Learn more",
+    role: "Full Stack Development",
+    link: "https://www.webdevvisuals.com/",
+    thumbnail:
+      "https://firebasestorage.googleapis.com/v0/b/webdev-visuals.appspot.com/o/misc%2Fwebdevvisuals.webp?alt=media&token=2bd3e819-1333-464a-8db1-491675d8d416",
+  },
+];
+
 export const recentIssues: ItemProps[] = [
   {
     title: "The Easiest Way to Build your Online Presence",
-    thumbnail: "/newsletter-banner.png",
+    thumbnail:
+      "https://firebasestorage.googleapis.com/v0/b/webdev-visuals.appspot.com/o/misc%2Fnewsletter-banner.webp?alt=media&token=8689ca29-04ad-410e-a9e9-552a3c7fbe7c",
     description: "I started building mine by doing this.",
     link: "/easiest-way-build-an-online-presence",
     isRoute: true,
@@ -79,7 +115,8 @@ export const recentIssues: ItemProps[] = [
     description: "As a Developer, this is how you level up.",
     link: "/you-have-to-code-or-build-something",
     isRoute: true,
-    thumbnail: "/newsletter-banner.png",
+    thumbnail:
+      "https://firebasestorage.googleapis.com/v0/b/webdev-visuals.appspot.com/o/misc%2Fnewsletter-banner.webp?alt=media&token=8689ca29-04ad-410e-a9e9-552a3c7fbe7c",
     cta: "Read",
   },
 ];
@@ -91,7 +128,8 @@ export const products: ItemProps[] = [
       "A platform to learn tips & tricks that would take your web dev skills to the next level all in one place.",
     cta: "Learn more",
     link: "https://www.webdevvisuals.com/",
-    thumbnail: "/products/webdevvisuals.png",
+    thumbnail:
+      "https://firebasestorage.googleapis.com/v0/b/webdev-visuals.appspot.com/o/misc%2Fnewsletter-banner.webp?alt=media&token=8689ca29-04ad-410e-a9e9-552a3c7fbe7c",
   },
   {
     title: "Essential Tips & Tricks (Free)",
@@ -99,14 +137,15 @@ export const products: ItemProps[] = [
       "Essential tips and tricks that would level up your website and your visitor's user experience.",
     badge: "Join The Waitlist",
     cta: "Join The Waitlist",
-    thumbnail: "/products/webdevvisuals.png",
+    thumbnail:
+      "https://firebasestorage.googleapis.com/v0/b/webdev-visuals.appspot.com/o/misc%2Fnewsletter-banner.webp?alt=media&token=8689ca29-04ad-410e-a9e9-552a3c7fbe7c",
   },
 ];
 
 export const techStack = [
   {
-    name: "NextJS",
-    Icon: SiNextdotjs,
+    name: "React",
+    Icon: SiReact,
     tooltip: "JavaScript Framework",
   },
   {
@@ -130,8 +169,8 @@ export const techStack = [
     tooltip: "JavaScript Extension",
   },
   {
-    name: "Firebase",
-    Icon: SiFirebase,
+    name: "Supabase",
+    Icon: SiSupabase,
     tooltip: "Application Backend",
   },
   {

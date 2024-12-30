@@ -15,7 +15,7 @@ const NewsletterSection = () => {
       title="Newsletters"
       viewAllLink="https://alicalimli.beehiiv.com/"
     >
-      <ul className="grid xs:grid-cols-2 gap-6 relative">{renderIssues}</ul>
+      <ul className="grid gap-6 relative">{renderIssues}</ul>
     </Section>
   );
 };

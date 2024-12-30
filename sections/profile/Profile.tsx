@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import SocialLinks from "@/components/social-links/social-links";
 import NewsletterSection from "../newsletter-section/newsletter-section";
+import SpringyText from "@/components/springy-text/SpringyText";
 
 interface ProfileProps {}
 
@@ -22,14 +23,17 @@ const Profile = ({}: ProfileProps) => {
   return (
     <header>
       <Avatar className="w-24 h-24">
-        <AvatarImage src="/alicalimli.jpg" alt="Ali Calimli's Profile" />
+        <AvatarImage
+          src="https://firebasestorage.googleapis.com/v0/b/webdev-visuals.appspot.com/o/misc%2Falicalimli.webp?alt=media&token=30ed30fc-e0f0-4c27-8873-840501d0760c"
+          alt="Ali Calimli's Profile"
+        />
         <AvatarFallback>AL</AvatarFallback>
       </Avatar>
 
-      <h2 className="scroll-m-20 text-2xl sm:text-3xl font-semibold my-2 tracking-tight flex items-center gap-2">
-        Ali Calimli
+      <h2 className="scroll-m-20 text-2xl font-semibold my-2 tracking-tight flex items-center gap-2">
+        <SpringyText className="justify-center text-3xl" text={"Ali Calimli"} />
         <Image
-          src="/verified-badge.png"
+          src="https://firebasestorage.googleapis.com/v0/b/webdev-visuals.appspot.com/o/misc%2Fverified-badge.webp?alt=media&token=37374006-9fe0-4665-b2b2-058c9f76c698"
           width={25}
           height={25}
           alt="verified badge"

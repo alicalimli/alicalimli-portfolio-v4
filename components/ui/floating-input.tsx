@@ -19,7 +19,7 @@ const FloatingInput = ({
   ...rest
 }: FloatingInputProps) => {
   return (
-    <div className="relative z-0">
+    <div className="relative z-0 ">
       {customInput ? (
         customInput("floating_standard", floatingInputClassName)
       ) : (

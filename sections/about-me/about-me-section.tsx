@@ -8,14 +8,17 @@ const AboutMe = ({}: AboutMeProps) => {
   return (
     <section className="flex flex-col gap-4 leading-7 text-muted-foreground text-lg">
       <Avatar className="w-20 h-20">
-        <AvatarImage src="/alicalimli.jpg" alt="Ali Calimli's Profile" />
+        <AvatarImage
+          src="https://firebasestorage.googleapis.com/v0/b/webdev-visuals.appspot.com/o/misc%2Falicalimli.webp?alt=media&token=30ed30fc-e0f0-4c27-8873-840501d0760c"
+          alt="Ali Calimli's Profile"
+        />
         <AvatarFallback>AL</AvatarFallback>
       </Avatar>
 
       <p className="text-white/85 font-semibold">
         Hey, Ali Here! 👋
         <br />
-        I'm a Front-end Developer and I Create Web Development Content.
+        I'm a Front-end Engineer and I Create Web Development Content.
       </p>
 
       <p>

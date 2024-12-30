@@ -54,7 +54,7 @@ const index = ({}: indexProps) => {
         <p>Here’s an example of me on my first day:</p>
 
         <Image
-          src="/newsletter/first-day.png"
+          src="https://firebasestorage.googleapis.com/v0/b/webdev-visuals.appspot.com/o/misc%2Ffirst-day.webp?alt=media&token=6fb167cd-7a42-452d-9bf0-1df7e570d274"
           className="rounded-lg"
           width={500}
           height={500}
@@ -71,7 +71,7 @@ const index = ({}: indexProps) => {
         <p>Here’s an example:</p>
 
         <Image
-          src="/newsletter/build-in-public.png"
+          src="https://firebasestorage.googleapis.com/v0/b/webdev-visuals.appspot.com/o/misc%2Fbuild-in-public.webp?alt=media&token=0724b336-fe24-470d-9139-1e6034217f12"
           className="rounded-lg"
           width={500}
           height={500}

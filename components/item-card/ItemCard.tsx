@@ -43,11 +43,11 @@ const ItemCard = ({ item }: ItemCardProps) => {
   const content = (
     <div className="cursor-pointer rounded-xl group relative">
       <div className="-inset-3 absolute bg-transparent group-hover:bg-card/50  duration-300 -z-10 rounded-xl" />
-      <Card className="flex flex-col border-none bg-transparent h-full z-10">
-        <CardHeader className="px-0 p-0">
+      <Card className="flex flex-col items-start sm:flex-row gap-4 border-none bg-transparent h-full z-10">
+        <CardHeader className="px-0 p-0 min-w-[13rem]">
           <Image
             alt={`${item.title} thumbnail`}
-            className="object-contain rounded-xl w-full"
+            className="object-contain rounded-xl w-full sm:w-52"
             src={item.thumbnail}
             width={300}
             height={300}
@@ -63,7 +63,7 @@ const ItemCard = ({ item }: ItemCardProps) => {
           </Conditional>
         </CardHeader>
 
-        <CardContent className="py-4 px-0 relative">
+        <CardContent className="px-0 relative">
           <Conditional condition={Boolean(item.role)}>
             <p className="text-xs text-muted-foreground">
               Design & Development
@@ -103,19 +103,18 @@ const ItemCard = ({ item }: ItemCardProps) => {
           </p>
 
           {/* <ArrowUpRightIcon size={20} className="absolute right-2 top-5" /> */}
+          <CardFooter className="mt-auto items-start p-0 flex flex-col mt-2">
+            <ul className="flex gap-1 flex-wrap">
+              {item?.technologies?.map((tech) => (
+                <li key={tech}>
+                  <Badge className="bg-muted text-white/80 rounded-md">
+                    {tech}
+                  </Badge>
+                </li>
+              ))}
+            </ul>
+          </CardFooter>
         </CardContent>
-
-        <CardFooter className="mt-auto items-start p-0 flex flex-col">
-          <ul className="flex gap-1 flex-wrap">
-            {item?.technologies?.map((tech) => (
-              <li key={tech}>
-                <Badge className="bg-muted text-white/80 rounded-md">
-                  {tech}
-                </Badge>
-              </li>
-            ))}
-          </ul>
-        </CardFooter>
       </Card>
     </div>
   );
