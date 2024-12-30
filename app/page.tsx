@@ -10,20 +10,30 @@ import BackgroundBricks from "@/components/ui/bg-bricks";
 export default function Home() {
   return (
     <>
-      <NewsletterSection />
+      <div className="app-section">
+        <NewsletterSection />
+      </div>
 
-      <main className="flex flex-col gap-12 my-12">
+      <main className="app-section flex flex-col gap-12 my-12">
         {/* <ProductsSection /> */}
 
-        <ProjectsSection />
+        <div className="app-section">
+          <ProjectsSection />
+        </div>
 
-        <OPProjectsSection />
+        <div className="app-section">
+          <OPProjectsSection />
+        </div>
 
-        <StackSection />
+        <div className="app-section">
+          <StackSection />
+        </div>
 
         <hr />
 
-        <AboutMe />
+        <div className="app-section">
+          <AboutMe />
+        </div>
       </main>
     </>
   );

@@ -30,7 +30,7 @@ const Profile = ({}: ProfileProps) => {
         <AvatarFallback>AL</AvatarFallback>
       </Avatar>
 
-      <h2 className="scroll-m-20 text-2xl font-semibold my-2 tracking-tight flex items-center gap-2">
+      <header className="scroll-m-20 text-2xl font-semibold my-2 tracking-tight flex items-center gap-2">
         <SpringyText className="justify-center text-3xl" text={"Ali Calimli"} />
         <Image
           src="https://firebasestorage.googleapis.com/v0/b/webdev-visuals.appspot.com/o/misc%2Fverified-badge.webp?alt=media&token=37374006-9fe0-4665-b2b2-058c9f76c698"
@@ -39,7 +39,7 @@ const Profile = ({}: ProfileProps) => {
           alt="verified badge"
         />
         <SocialLinks iconSize="w-6 h-6" />
-      </h2>
+      </header>
 
       <p className="text-md sm:text-xl  text-muted-foreground">
         I send 1k+ developers tips, strategies, and resources that would help

@@ -103,7 +103,7 @@ const ItemCard = ({ item }: ItemCardProps) => {
           </p>
 
           {/* <ArrowUpRightIcon size={20} className="absolute right-2 top-5" /> */}
-          <CardFooter className="mt-auto items-start p-0 flex flex-col mt-2">
+          <CardFooter className="items-start p-0 flex flex-col mt-2">
             <ul className="flex gap-1 flex-wrap">
               {item?.technologies?.map((tech) => (
                 <li key={tech}>

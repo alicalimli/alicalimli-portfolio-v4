@@ -48,6 +48,7 @@ export default function RootLayout({
             className="pointer-events-none"
             patternColor="rgba(255,255,255,0.1)"
           />
+
           <Profile />
           {children}
           <Footer />

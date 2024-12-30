@@ -4,7 +4,7 @@ import { recentIssues } from "@/data";
 
 const NewsletterSection = () => {
   const renderIssues = recentIssues.map((issue) => (
-    <li key={issue.title}>
+    <li className="item-card " key={issue.title}>
       <ItemCard item={issue} />
     </li>
   ));

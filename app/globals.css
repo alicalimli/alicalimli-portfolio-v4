@@ -61,3 +61,19 @@
 :root {
   color-scheme: dark;
 }
+
+.item-card,
+.app-section {
+  opacity: 1;
+  transition: all 0.45s ease;
+}
+
+.item-card:has(~ .item-card:hover),
+.item-card:hover ~ .item-card {
+  opacity: 0.3;
+}
+
+.app-section:has(~ .app-section:hover),
+.app-section:hover ~ .app-section {
+  opacity: 0.3;
+}

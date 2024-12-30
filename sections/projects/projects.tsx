@@ -4,7 +4,7 @@ import { projects } from "@/data";
 
 const ProjectsSection = () => {
   const renderProjects = projects.map((project) => (
-    <li key={project.title}>
+    <li className="item-card " key={project.title}>
       <ItemCard item={project} />
     </li>
   ));
