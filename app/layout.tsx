@@ -6,6 +6,7 @@ import { Toaster } from "@/components/ui/sonner";
 import Footer from "@/sections/footer/footer";
 import Profile from "@/sections/profile/Profile";
 import BackgroundBricks from "@/components/ui/bg-bricks";
+import MouseSpotlight from "@/components/ui/mouse-spotlight";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -43,12 +44,12 @@ export default function RootLayout({
           poppins.variable
         )}
       >
+        <MouseSpotlight />
+        <BackgroundBricks
+          className="pointer-events-none"
+          patternColor="rgba(255,255,255,0.1)"
+        />
         <main className="max-w-2xl mx-auto p-4 py-24">
-          <BackgroundBricks
-            className="pointer-events-none"
-            patternColor="rgba(255,255,255,0.1)"
-          />
-
           <Profile />
           {children}
           <Footer />
