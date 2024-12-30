@@ -39,31 +39,53 @@ export const socialLinks = [
 export const opprojects: ItemProps[] = [
   {
     title: "ACMessenger",
-    thumbnail: "/projects/acmessenger.png",
+    thumbnail:
+      "https://firebasestorage.googleapis.com/v0/b/webdev-visuals.appspot.com/o/misc%2Facmessenger.webp?alt=media&token=fdc201e4-bf18-493a-b9ab-58d41149741b",
     description:
-      "A Fullstack Chatapp that I've built to learn more about React and its popular libraries like redux, and also learn to use Firebase.",
-    cta: "Visit Website",
-    role: "Design & Development",
+      "A real-time chat app using React and Firebase. I've built this project to explore state management with Redux Toolkit and deepen my knowledge with React and its libaries. TailwindCSS and Framer motion was used to provide a fluid User Experience.",
+
+    cta: "Experience ACMessenger",
+    role: "Lead Designer & Full Stack Developer",
     link: "https://ac-messenger-p.web.app/",
     sourceCode: "https://github.com/alicalimli/ac-messenger",
+    twitter: "https://x.com/alicalimli_dev/status/1592072460006219776",
     technologies: [
       "ReactJS",
-      "Typescript",
+      "TypeScript",
+      "Framer Motion",
       "Firebase",
       "TailwindCSS",
       "Redux Toolkit",
     ],
+    twitterTP: "Over 190+ Reviews on Twitter/X",
   },
   {
     title: "MovieMatrix",
-    thumbnail: "/projects/moviematrix.png",
+    thumbnail:
+      "https://firebasestorage.googleapis.com/v0/b/webdev-visuals.appspot.com/o/misc%2Fmoviematrix.webp?alt=media&token=f7ed9cfc-639e-4836-acae-4fe355082803",
     sourceCode: "https://github.com/alicalimli/movie-matrix-app/",
+    twitter: "https://x.com/alicalimli_dev/status/1530437661990830080",
     description:
-      "A Vanilla JS Project that I have built to deepen my knowledge about HTML, CSS and JavaScript and practice consuming API’s as well.",
+      "A platform to explore shows and movies built with vanilla JavaScript and MVC pattern, using TMDB to show the latest movies in an easy-to-use format.",
     cta: "Visit Website",
     role: "Design & Development",
     link: "https://moviematrix.netlify.app/",
     technologies: ["HTML", "CSS", "JavaScript"],
+    twitterTP: "Over 180+ Reviews on Twitter/X",
+  },
+  {
+    title: "Portfolio Website v2",
+    thumbnail:
+      "https://firebasestorage.googleapis.com/v0/b/webdev-visuals.appspot.com/o/misc%2Faliv2-portfolio.webp?alt=media&token=e1d1e208-bf90-4556-b80e-4932656cbc07",
+    sourceCode: "https://v2.alicalimli.com/",
+    description:
+      "A modern, minimalist portfolio website built with Next.js and TypeScript to showcase my latest projects and professional journey in web development.",
+    cta: "Visit Website",
+    role: "Design & Development",
+    link: "https://moviematrix.netlify.app/",
+    technologies: ["NextJS", "Typescript", "TailwindCSS", "Framer Motion"],
+    twitter: "https://x.com/alicalimli_dev/status/1642513563741831168",
+    twitterTP: "Over 40+ Reviews on Twitter/X",
   },
 ];
 

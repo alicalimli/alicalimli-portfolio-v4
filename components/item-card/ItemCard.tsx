@@ -8,7 +8,7 @@ import {
   CardHeader,
 } from "@/components/ui/card";
 import Image from "next/image";
-import { FaGithub } from "react-icons/fa6";
+import { FaGithub, FaXTwitter } from "react-icons/fa6";
 import {
   Tooltip,
   TooltipContent,
@@ -19,12 +19,16 @@ import { Badge } from "@/components/ui/badge";
 import Conditional from "../conditional/Conditional";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import { SiTwitter } from "react-icons/si";
+import { TwitterLogo } from "@phosphor-icons/react";
 
 export interface ItemProps {
   title: string;
   description: string;
   badge?: string;
   thumbnail: string;
+  twitter?: string;
+  twitterTP?: string;
   isRoute?: boolean;
   role?: string;
   technologies?: string[];
@@ -93,6 +97,31 @@ const ItemCard = ({ item }: ItemCardProps) => {
                   </TooltipTrigger>
                   <TooltipContent>
                     <p>View Source Code</p>
+                  </TooltipContent>
+                </Tooltip>
+              </TooltipProvider>
+            </Conditional>
+
+            <Conditional condition={Boolean(item.twitter)}>
+              <TooltipProvider delayDuration={0}>
+                <Tooltip>
+                  <TooltipTrigger asChild>
+                    <button
+                      onClick={(e) => {
+                        e.stopPropagation();
+
+                        window.open(
+                          item.twitter,
+                          "_blank",
+                          "noopener,noreferrer"
+                        );
+                      }}
+                    >
+                      <FaXTwitter className="w-5 h-5" />
+                    </button>
+                  </TooltipTrigger>
+                  <TooltipContent>
+                    <p>{item?.twitterTP || "Twitter"}</p>
                   </TooltipContent>
                 </Tooltip>
               </TooltipProvider>
