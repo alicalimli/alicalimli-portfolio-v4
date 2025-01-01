@@ -7,10 +7,14 @@ import ProjectsSection from "@/sections/projects/projects";
 import BackgroundDots from "@/components/ui/bg-dot";
 import BackgroundBricks from "@/components/ui/bg-bricks";
 import FeaturedTweets from "@/sections/featured-tweets/featured-tweets";
+import ScrollToTop from "@/components/scroll-top/scroll-to-top";
+import ScrollToTopButton from "@/components/ui/scroll-to-top-button";
 
 export default function Home() {
   return (
     <>
+      <ScrollToTopButton />
+
       <div className="app-section">
         <NewsletterSection />
       </div>
