@@ -3,6 +3,7 @@ import { ReactNode } from "react";
 import { Button } from "../ui/button";
 import { cn } from "@/lib/utils";
 import SpringyText from "../springy-text/SpringyText";
+import { Envelope, Mailbox, PaperPlaneTilt } from "@phosphor-icons/react";
 
 interface SectionProps {
   title: string;
@@ -11,6 +12,7 @@ interface SectionProps {
   mainClassName?: string;
   viewAllLink?: string;
   children: ReactNode;
+  titleIcon: any;
 }
 
 const Section = ({
@@ -20,14 +22,22 @@ const Section = ({
   headerClassName,
   mainClassName,
   children,
+  titleIcon,
 }: SectionProps) => {
+  const Icon = titleIcon;
+
   return (
     <section className={cn("", className)}>
-      <header className={cn("flex items-center mb-5", headerClassName)}>
+      <header className={cn("flex items-center mb-6", headerClassName)}>
         {/* <h4 className="scroll-m-20 text-xl font-semibold tracking-tight opacity-95">
           {title}
         </h4> */}
-        <SpringyText className="justify-center text-2xl" text={title} />
+        <SpringyText
+          className="justify-center text-2xl opacity-90"
+          text={title}
+        />
+
+        {titleIcon && <Icon weight="fill" className="ml-2 size-7 opacity-70" />}
 
         {!viewAllLink ? null : (
           <Button

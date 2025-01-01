@@ -3,25 +3,35 @@
 import { useState, useEffect } from "react";
 
 const MouseSpotlight = () => {
+  const [mousePos, setMousePos] = useState({ x: "0px", y: "0px" });
+
   useEffect(() => {
     const handleMouseMove = (e) => {
-      // Set the mouse position as CSS properties on the body
-      document.body.style.setProperty("--mouse-x", `${e.clientX}px`);
-      document.body.style.setProperty("--mouse-y", `${e.clientY}px`);
+      setMousePos({
+        x: `${e.clientX}px`,
+        y: `${e.clientY}px`,
+      });
     };
 
-    // Attach the mousemove event listener to the body
-    document.body.addEventListener("mousemove", handleMouseMove);
+    document.addEventListener("mousemove", handleMouseMove);
 
-    // Cleanup the event listener on unmount
     return () => {
-      document.body.removeEventListener("mousemove", handleMouseMove);
+      document.removeEventListener("mousemove", handleMouseMove);
     };
-  }, []); // Empty dependency array to run this once on mount
+  }, []);
 
   return (
-    <div className="spotlight-container">
-      <div className="spotlight"></div>
+    <div className="fixed inset-0 -z-10">
+      <div
+        className="absolute inset-0 transition-opacity duration-500"
+        style={{
+          background: `radial-gradient(
+            1200px circle at ${mousePos.x} ${mousePos.y},
+            rgba(255, 255, 255, 0.02),
+            transparent 60%
+          )`,
+        }}
+      />
     </div>
   );
 };
