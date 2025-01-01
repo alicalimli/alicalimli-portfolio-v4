@@ -47,7 +47,7 @@ export default function RootLayout({
         <MouseSpotlight />
         <BackgroundBricks
           className="pointer-events-none"
-          patternColor="rgba(255,255,255,0.1)"
+          patternColor="rgba(255,255,255,0.08)"
         />
         <main className="max-w-2xl mx-auto p-4 py-24">
           <Profile />

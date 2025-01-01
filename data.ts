@@ -66,7 +66,7 @@ export const opprojects: ItemProps[] = [
     sourceCode: "https://github.com/alicalimli/movie-matrix-app/",
     twitter: "https://x.com/alicalimli_dev/status/1530437661990830080",
     description:
-      "A platform to explore shows and movies built with vanilla JavaScript and MVC pattern, using TMDB to show the latest movies in an easy-to-use format.",
+      "A platform to explore shows and movies built with vanilla JavaScript and MVC pattern, using TMDB API to show the latest movies in an easy-to-use format.",
     cta: "Visit Website",
     role: "Design & Development",
     link: "https://moviematrix.netlify.app/",
@@ -77,12 +77,12 @@ export const opprojects: ItemProps[] = [
     title: "Portfolio Website v2",
     thumbnail:
       "https://firebasestorage.googleapis.com/v0/b/webdev-visuals.appspot.com/o/misc%2Faliv2-portfolio.webp?alt=media&token=e1d1e208-bf90-4556-b80e-4932656cbc07",
-    sourceCode: "https://v2.alicalimli.com/",
+    sourceCode: "https://github.com/alicalimli/alicalimli-portfolio/",
     description:
       "A modern, minimalist portfolio website built with Next.js and TypeScript to showcase my latest projects and professional journey in web development.",
     cta: "Visit Website",
     role: "Design & Development",
-    link: "https://moviematrix.netlify.app/",
+    link: "https://v2.alicalimli.com/",
     technologies: ["NextJS", "Typescript", "TailwindCSS", "Framer Motion"],
     twitter: "https://x.com/alicalimli_dev/status/1642513563741831168",
     twitterTP: "Over 40+ Reviews on Twitter/X",
