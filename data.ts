@@ -13,6 +13,29 @@ import { TbBrandFramerMotion } from "react-icons/tb";
 import { FaGithub, FaLinkedin, FaSquareXTwitter } from "react-icons/fa6";
 import { IoIosMail } from "react-icons/io";
 
+export const featuredTweets = [
+  {
+    id: "1681551950326939650",
+    source: "https://x.com/alicalimli_dev/status/1681551950326939650",
+  },
+  {
+    id: "1715979202661392881",
+    source: "https://x.com/alicalimli_dev/status/1715979202661392881",
+  },
+  {
+    id: "1739552586041061459",
+    source: "https://x.com/alicalimli_dev/status/1739552586041061459",
+  },
+  {
+    id: "1731927377314295864",
+    source: "https://x.com/alicalimli_dev/status/1731927377314295864",
+  },
+  {
+    id: "1684088694414938113",
+    source: "https://x.com/alicalimli_dev/status/1684088694414938113",
+  },
+];
+
 export const socialLinks = [
   {
     tooltip: "X (formerly Twitter)",

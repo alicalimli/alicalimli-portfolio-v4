@@ -99,3 +99,7 @@
   transition: opacity 500ms;
   width: 100%;
 }
+
+.featured-tweets-section {
+  mask-image: linear-gradient(to left, transparent, #222, transparent);
+}

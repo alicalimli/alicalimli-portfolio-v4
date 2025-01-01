@@ -6,6 +6,7 @@ import NewsletterSection from "@/sections/newsletter-section/newsletter-section"
 import ProjectsSection from "@/sections/projects/projects";
 import BackgroundDots from "@/components/ui/bg-dot";
 import BackgroundBricks from "@/components/ui/bg-bricks";
+import FeaturedTweets from "@/sections/featured-tweets/featured-tweets";
 
 export default function Home() {
   return (
@@ -33,6 +34,10 @@ export default function Home() {
 
         <div className="app-section">
           <AboutMe />
+        </div>
+
+        <div className="app-section">
+          <FeaturedTweets />
         </div>
       </main>
     </>
