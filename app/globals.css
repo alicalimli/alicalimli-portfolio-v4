@@ -81,3 +81,24 @@
 .featured-tweets-section {
   mask-image: linear-gradient(to left, transparent, #222, transparent);
 }
+
+@media (hover: hover) {
+  ::-webkit-scrollbar {
+    width: 18px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+    margin-block: 0.5rem;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border: 6px solid #090909;
+    background: #222;
+    border-radius: 100vmax;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #666;
+  }
+}

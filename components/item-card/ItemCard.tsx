@@ -24,6 +24,7 @@ import { TwitterLogo } from "@phosphor-icons/react";
 
 export interface ItemProps {
   title: string;
+  id?: string;
   description: string;
   badge?: string;
   thumbnail: string;

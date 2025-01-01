@@ -151,18 +151,18 @@ export const recentIssues: ItemProps[] = [
     thumbnail:
       "https://firebasestorage.googleapis.com/v0/b/webdev-visuals.appspot.com/o/misc%2Fnewsletter-banner.webp?alt=media&token=8689ca29-04ad-410e-a9e9-552a3c7fbe7c",
     description: "I started building mine by doing this.",
-    link: "/easiest-way-build-an-online-presence",
     isRoute: true,
     cta: "Read",
+    id: "1",
   },
   {
     title: "You have to code or build SOMETHING",
     description: "As a Developer, this is how you level up.",
-    link: "/you-have-to-code-or-build-something",
     isRoute: true,
     thumbnail:
       "https://firebasestorage.googleapis.com/v0/b/webdev-visuals.appspot.com/o/misc%2Fnewsletter-banner.webp?alt=media&token=8689ca29-04ad-410e-a9e9-552a3c7fbe7c",
     cta: "Read",
+    id: "2",
   },
 ];
 

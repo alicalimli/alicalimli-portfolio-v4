@@ -13,6 +13,7 @@ module.exports = {
   content: [
     "./pages/**/*.{ts,tsx}",
     "./components/**/*.{ts,tsx}",
+    "./data-newsletters.tsx",
     "./app/**/*.{ts,tsx}",
     "./sections/**/*.{ts,tsx}",
     "./src/**/*.{ts,tsx}",
@@ -96,6 +97,7 @@ module.exports = {
   },
   plugins: [
     require("tailwindcss-animate"),
+    require("tailwind-scrollbar-hide"),
     function ({ matchUtilities, theme }: any) {
       matchUtilities(
         {
