@@ -47,7 +47,7 @@ const ItemCard = ({ item }: ItemCardProps) => {
 
   const content = (
     <div className="cursor-pointer rounded-xl group relative">
-      <div className="-inset-3 absolute bg-transparent group-hover:bg-card/50  duration-300 -z-10 rounded-xl" />
+      <div className="-inset-3 absolute opacity-0 group-hover:opacity-100 bg-gradient-to-b from-white/10 to-transparent duration-300 -z-10 rounded-xl" />
       <Card className="flex flex-col items-start sm:flex-row gap-4 border-none bg-transparent h-full z-10">
         <CardHeader className="px-0 p-0 min-w-[13rem]">
           <Image
