@@ -14,7 +14,7 @@ const Footer = ({}: FooterProps) => {
 
       <div className="flex items-center mt-2">
         <p className="text-xs text-muted-foreground">
-          © {currentYear} Designed and Developed by Ali Calimli.
+          © {currentYear} Designed and Developed by Ali Calimli
         </p>
 
         <SocialLinks className="ml-auto" />

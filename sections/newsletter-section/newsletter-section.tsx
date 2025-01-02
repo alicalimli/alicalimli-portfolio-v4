@@ -44,7 +44,7 @@ const NewsletterSection = () => {
     <Section
       titleIcon={Mailbox}
       className="mt-6"
-      title="Newsletters"
+      title="Newsletter"
       viewAllLink="https://alicalimli.beehiiv.com/"
     >
       <Drawer
