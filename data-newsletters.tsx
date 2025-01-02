@@ -6,7 +6,7 @@ export const DATA_NEWSLETTERS = [
     content: (
       <main className="my-6">
         <header className="text-center flex flex-col ">
-          <h2 className="scroll-m-20 text-xl sm:text-2xl mt-2 font-semibold tracking-tight first:mt-0">
+          <h2 className="scroll-m-20 text-xl sm:text-2xl font-semibold tracking-tight first:mt-0">
             You have to code or build SOMETHING
           </h2>
 
@@ -76,7 +76,7 @@ export const DATA_NEWSLETTERS = [
     content: (
       <main className="my-6">
         <header className="text-center flex flex-col ">
-          <h2 className="scroll-m-20 text-xl sm:text-2xl mt-2 font-semibold tracking-tight first:mt-0">
+          <h2 className="scroll-m-20 text-xl sm:text-2xl font-semibold tracking-tight first:mt-0">
             Easiest way to build an online presence
           </h2>
 

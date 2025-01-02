@@ -12,6 +12,12 @@ import { ItemProps } from "./components/item-card/ItemCard";
 import { TbBrandFramerMotion } from "react-icons/tb";
 import { FaGithub, FaLinkedin, FaSquareXTwitter } from "react-icons/fa6";
 import { IoIosMail } from "react-icons/io";
+import {
+  Envelope,
+  GithubLogo,
+  LinkedinLogo,
+  XLogo,
+} from "@phosphor-icons/react";
 
 export const featuredTweets = [
   {
@@ -38,23 +44,23 @@ export const featuredTweets = [
 
 export const socialLinks = [
   {
-    tooltip: "X (formerly Twitter)",
-    Icon: FaSquareXTwitter,
+    tooltip: "@alicalimli_dev on Twitter/X",
+    Icon: XLogo,
     link: "https://twitter.com/alicalimli_dev",
   },
   {
-    Icon: FaLinkedin,
-    tooltip: "LinkedIn",
+    Icon: LinkedinLogo,
+    tooltip: "@alicalimli on LinkedIn",
     link: "https://www.linkedin.com/in/alicalimli/",
   },
   {
-    Icon: FaGithub,
-    tooltip: "Github",
+    Icon: GithubLogo,
+    tooltip: "@alicalimli on Github",
     link: "https://github.com/alicalimli",
   },
   {
-    Icon: IoIosMail,
-    tooltip: "Email",
+    Icon: Envelope,
+    tooltip: "alicalimli76@gmail.com",
     link: "mailto:@alicalimli76@gmail.com",
   },
 ];

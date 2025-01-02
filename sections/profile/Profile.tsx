@@ -8,6 +8,7 @@ import Image from "next/image";
 import SocialLinks from "@/components/social-links/social-links";
 import NewsletterSection from "../newsletter-section/newsletter-section";
 import SpringyText from "@/components/springy-text/SpringyText";
+import { SealCheck } from "@phosphor-icons/react";
 
 interface ProfileProps {}
 
@@ -22,26 +23,28 @@ const Profile = ({}: ProfileProps) => {
 
   return (
     <header>
-      <Avatar className="w-24 h-24">
+      <Avatar className="size-32 md:size-36 xl:size-44">
         <AvatarImage
-          src="https://firebasestorage.googleapis.com/v0/b/webdev-visuals.appspot.com/o/misc%2Falicalimli.webp?alt=media&token=30ed30fc-e0f0-4c27-8873-840501d0760c"
+          src="https://firebasestorage.googleapis.com/v0/b/webdev-visuals.appspot.com/o/misc%2Fprofile-image.jpeg?alt=media&token=13372ddb-56b9-47ef-a937-46fa5e2c6a30"
           alt="Ali Calimli's Profile"
         />
         <AvatarFallback>AL</AvatarFallback>
       </Avatar>
 
-      <header className="scroll-m-20 text-2xl font-semibold my-2 tracking-tight flex items-center gap-2">
-        <SpringyText className="justify-center text-3xl" text={"Ali Calimli"} />
-        <Image
-          src="https://firebasestorage.googleapis.com/v0/b/webdev-visuals.appspot.com/o/misc%2Fverified-badge.webp?alt=media&token=37374006-9fe0-4665-b2b2-058c9f76c698"
-          width={25}
-          height={25}
-          alt="verified badge"
+      <header className="scroll-m-20 font-semibold my-2 mt-4 tracking-tight flex items-center gap-2">
+        <SpringyText
+          className="justify-center text-3xl md:text-4xl xl:text-5xl"
+          text={"Ali Calimli"}
         />
-        <SocialLinks iconSize="w-6 h-6" />
+
+        <SealCheck
+          weight="fill"
+          className="size-6  md:size-8 xl:size-9 text-blue-500"
+        />
+        <SocialLinks iconSize="size-6  md:size-8 xl:size-9" />
       </header>
 
-      <p className="text-md sm:text-xl  text-muted-foreground">
+      <p className="text-md md:text-lg xl:text-xl text-muted-foreground">
         I send 1k+ developers tips, strategies, and resources that would help
         them succeed in their web development journey.
       </p>

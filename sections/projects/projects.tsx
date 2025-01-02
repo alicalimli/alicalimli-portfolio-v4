@@ -3,7 +3,7 @@
 import Section from "@/components/section/section";
 import ItemCard from "@/components/item-card/ItemCard";
 import { projects } from "@/data";
-import { Layout, Planet } from "@phosphor-icons/react";
+import { Briefcase, Layout, Planet } from "@phosphor-icons/react";
 
 const ProjectsSection = () => {
   const renderProjects = projects.map((project) => (
@@ -13,7 +13,7 @@ const ProjectsSection = () => {
   ));
 
   return (
-    <Section titleIcon={Planet} title="Projects">
+    <Section titleIcon={Briefcase} title="Projects">
       <ul className="grid gap-6 relative">{renderProjects}</ul>
     </Section>
   );

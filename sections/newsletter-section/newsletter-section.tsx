@@ -27,7 +27,7 @@ const NewsletterSection = () => {
   const renderIssues = recentIssues.map((issue) => (
     <li className="item-card " key={issue.title}>
       <button
-        className="text-start"
+        className="text-start w-full"
         onClick={() => {
           if (!issue?.id) return;
 
@@ -49,11 +49,12 @@ const NewsletterSection = () => {
     >
       <Drawer
         open={drawerOpen}
+        shouldScaleBackground
         onOpenChange={() => {
           setDrawerOpen(false);
         }}
       >
-        <DrawerContent className="w-screen sm:w-[95svw] mx-auto max-w-4xl">
+        <DrawerContent className="w-screen sm:w-[95svw] mx-auto max-w-4xl ">
           <button
             onClick={() => setDrawerOpen(false)}
             className="hidden sm:block bg-[#222] rounded-full p-3 absolute sm:top-10 sm:left-10 w-fit hover:bg-[#111] duration-300"
@@ -61,7 +62,7 @@ const NewsletterSection = () => {
             <ArrowLeft />
           </button>
 
-          <section className="max-h-[80svh] sm:max-h-[90svh] scrollbar-hide overflow-y-auto  px-4 sm:px-12">
+          <section className="max-h-[80svh] sm:max-h-[90svh] scrollbar-hide overflow-y-auto  px-4 sm:px-12 mt-4">
             {data?.content}
           </section>
 

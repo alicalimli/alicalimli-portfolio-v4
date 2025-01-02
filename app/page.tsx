@@ -16,6 +16,10 @@ export default function Home() {
       <ScrollToTopButton />
 
       <div className="app-section">
+        <AboutMe />
+      </div>
+
+      <div className="app-section">
         <NewsletterSection />
       </div>
 
@@ -36,11 +40,7 @@ export default function Home() {
 
         <hr />
 
-        <div className="app-section">
-          <AboutMe />
-        </div>
-
-        <div className="app-section">
+        <div className="app-section w-full">
           <FeaturedTweets />
         </div>
       </main>

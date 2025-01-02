@@ -35,7 +35,7 @@ export const BackgroundBricks: React.FC<CustomPatternBackgroundProps> = ({
 
   return (
     <div
-      className={`absolute -z-10 inset-0 h-full w-full ${className}`}
+      className={`fixed -z-10 inset-0 h-full w-full ${className}`}
       style={backgroundStyle}
       {...props}
     />
