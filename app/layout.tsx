@@ -47,19 +47,9 @@ export default function RootLayout({
           patternColor="rgba(255,255,255,0.08)"
         />
 
-        <div className="grid xl:grid-cols-2 max-w-[1600px] mx-auto min-h-screen">
-          {/* Sidebar */}
-          <aside className="xl:sticky xl:top-0 xl:h-screen text-white p-16 pt-24 pb-0 max-w-4xl mx-auto xl:max-w-[auto]">
-            <Profile />
-          </aside>
+        {children}
 
-          {/* Main Content */}
-          <main className=" overflow-y-auto p-16 pt-4 xl:pt-24 max-w-4xl mx-auto xl:max-w-[auto]">
-            {children}
-            <Footer />
-            <Toaster richColors closeButton />
-          </main>
-        </div>
+        <Toaster richColors closeButton />
       </body>
     </html>
   );
