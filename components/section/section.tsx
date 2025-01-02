@@ -12,7 +12,7 @@ interface SectionProps {
   mainClassName?: string;
   viewAllLink?: string;
   children: ReactNode;
-  titleIcon: any;
+  titleIcon?: any;
 }
 
 const Section = ({

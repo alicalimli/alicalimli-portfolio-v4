@@ -6,7 +6,7 @@ const MouseSpotlight = () => {
   const [mousePos, setMousePos] = useState({ x: "0px", y: "0px" });
 
   useEffect(() => {
-    const handleMouseMove = (e) => {
+    const handleMouseMove = (e: any) => {
       setMousePos({
         x: `${e.clientX}px`,
         y: `${e.clientY}px`,

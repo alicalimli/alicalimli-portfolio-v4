@@ -19,7 +19,7 @@ import { DATA_NEWSLETTERS } from "@/data-newsletters";
 import { useState } from "react";
 
 const NewsletterSection = () => {
-  const [activeNewsletter, setActiveNewsletter] = useState(null);
+  const [activeNewsletter, setActiveNewsletter] = useState<string | null>(null);
   const [drawerOpen, setDrawerOpen] = useState(false);
 
   const data = DATA_NEWSLETTERS.find((d) => d.id === activeNewsletter);
