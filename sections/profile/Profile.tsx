@@ -23,10 +23,11 @@ const Profile = ({}: ProfileProps) => {
 
   return (
     <header>
-      <Avatar className="size-32 md:size-36 xl:size-44">
+      <Avatar className="size-32 md:size-36 xl:size-44 profile-avatar">
         <AvatarImage
           src="https://firebasestorage.googleapis.com/v0/b/webdev-visuals.appspot.com/o/misc%2Fprofile-image.jpeg?alt=media&token=13372ddb-56b9-47ef-a937-46fa5e2c6a30"
           alt="Ali Calimli's Profile"
+          className="hover:scale-[1.2] duration-300 hover:brightness-75"
         />
         <AvatarFallback>AL</AvatarFallback>
       </Avatar>

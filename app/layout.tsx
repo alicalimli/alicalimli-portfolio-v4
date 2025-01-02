@@ -39,7 +39,10 @@ export default function RootLayout({
   return (
     <html className="dark" lang="en">
       <body
-        className={cn("bg-background font-sans antialiased ", poppins.variable)}
+        className={cn(
+          "bg-background  font-sans antialiased ",
+          poppins.variable
+        )}
       >
         <MouseSpotlight />
         <BackgroundBricks

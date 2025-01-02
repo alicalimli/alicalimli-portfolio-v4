@@ -13,7 +13,7 @@ const ProjectsSection = () => {
   ));
 
   return (
-    <Section titleIcon={Briefcase} title="Projects">
+    <Section titleIcon={Briefcase} title="Projects Experience">
       <ul className="grid gap-6 relative">{renderProjects}</ul>
     </Section>
   );

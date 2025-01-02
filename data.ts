@@ -65,7 +65,37 @@ export const socialLinks = [
   },
 ];
 
-export const opprojects: ItemProps[] = [
+export const projects: ItemProps[] = [
+  {
+    title: "SRSWTI",
+    thumbnail:
+      "https://firebasestorage.googleapis.com/v0/b/webdev-visuals.appspot.com/o/misc%2Fsrswti-home.webp?alt=media&token=612beab7-c08a-488a-827f-f0b28bad7588",
+    description:
+      "A Fullstack Chatapp that I've built to learn more about React and its popular libraries like redux, and also learn to use Firebase.",
+    cta: "Visit Website",
+    role: "Full Stack Development",
+    link: "https://ac-messenger-p.web.app/",
+  },
+  {
+    title: "MagicNotes",
+    thumbnail:
+      "https://firebasestorage.googleapis.com/v0/b/webdev-visuals.appspot.com/o/misc%2Fmagicnotes%20(1).webp?alt=media&token=51ea4c23-39e4-45b2-aeba-3b0451ceb033",
+    description:
+      "A Vanilla JS Project that I have built to deepen my knowledge about HTML, CSS and JavaScript and practice consuming API’s as well.",
+    cta: "Visit Website",
+    role: "Full Stack Development",
+    link: "https://moviematrix.netlify.app/",
+  },
+  {
+    title: "WebDevVisuals",
+    description:
+      "A platform to learn tips & tricks that would take your web dev skills to the next level all in one place.",
+    cta: "Learn more",
+    role: "Full Stack Development",
+    link: "https://www.webdevvisuals.com/",
+    thumbnail:
+      "https://firebasestorage.googleapis.com/v0/b/webdev-visuals.appspot.com/o/misc%2Fwebdevvisuals.webp?alt=media&token=2bd3e819-1333-464a-8db1-491675d8d416",
+  },
   {
     title: "ACMessenger",
     thumbnail:
@@ -115,39 +145,6 @@ export const opprojects: ItemProps[] = [
     technologies: ["NextJS", "Typescript", "TailwindCSS", "Framer Motion"],
     twitter: "https://x.com/alicalimli_dev/status/1642513563741831168",
     twitterTP: "Over 40+ Reviews on Twitter/X",
-  },
-];
-
-export const projects: ItemProps[] = [
-  {
-    title: "SRSWTI",
-    thumbnail:
-      "https://firebasestorage.googleapis.com/v0/b/webdev-visuals.appspot.com/o/misc%2Fsrswti-home.webp?alt=media&token=612beab7-c08a-488a-827f-f0b28bad7588",
-    description:
-      "A Fullstack Chatapp that I've built to learn more about React and its popular libraries like redux, and also learn to use Firebase.",
-    cta: "Visit Website",
-    role: "Full Stack Development",
-    link: "https://ac-messenger-p.web.app/",
-  },
-  {
-    title: "MagicNotes",
-    thumbnail:
-      "https://firebasestorage.googleapis.com/v0/b/webdev-visuals.appspot.com/o/misc%2Fmagicnotes%20(1).webp?alt=media&token=51ea4c23-39e4-45b2-aeba-3b0451ceb033",
-    description:
-      "A Vanilla JS Project that I have built to deepen my knowledge about HTML, CSS and JavaScript and practice consuming API’s as well.",
-    cta: "Visit Website",
-    role: "Full Stack Development",
-    link: "https://moviematrix.netlify.app/",
-  },
-  {
-    title: "WebDevVisuals",
-    description:
-      "A platform to learn tips & tricks that would take your web dev skills to the next level all in one place.",
-    cta: "Learn more",
-    role: "Full Stack Development",
-    link: "https://www.webdevvisuals.com/",
-    thumbnail:
-      "https://firebasestorage.googleapis.com/v0/b/webdev-visuals.appspot.com/o/misc%2Fwebdevvisuals.webp?alt=media&token=2bd3e819-1333-464a-8db1-491675d8d416",
   },
 ];
 

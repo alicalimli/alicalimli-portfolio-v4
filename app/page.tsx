@@ -11,6 +11,7 @@ import ScrollToTop from "@/components/scroll-top/scroll-to-top";
 import ScrollToTopButton from "@/components/ui/scroll-to-top-button";
 import Footer from "@/sections/footer/footer";
 import Profile from "@/sections/profile/Profile";
+import ScrollTracker from "@/components/ui/scroll-tracker";
 
 export default function Home() {
   return (
@@ -19,6 +20,10 @@ export default function Home() {
         {/* Sidebar */}
         <aside className="xl:sticky xl:top-0 xl:h-screen text-white p-16 pt-24 pb-0 max-w-4xl mx-auto xl:max-w-[auto]">
           <Profile />
+
+          <div className="absolute bottom-12 left-[66px]">
+            <ScrollTracker />
+          </div>
         </aside>
 
         {/* Main Content */}
@@ -36,10 +41,6 @@ export default function Home() {
 
             <div className="app-section">
               <ProjectsSection />
-            </div>
-
-            <div className="app-section">
-              <OPProjectsSection />
             </div>
 
             <div className="app-section">

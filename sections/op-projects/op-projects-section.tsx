@@ -2,9 +2,9 @@
 
 import Section from "@/components/section/section";
 import ItemCard from "@/components/item-card/ItemCard";
-import { opprojects as projects } from "@/data";
 import { GitBranchPlus } from "lucide-react";
 import { GitBranch } from "@phosphor-icons/react";
+import { projects } from "@/data";
 
 const OPProjectsSection = () => {
   const renderProjects = projects.map((project) => (
