@@ -45,11 +45,12 @@ const Profile = ({}: ProfileProps) => {
         <SocialLinks iconSize="size-6  md:size-8 xl:size-9" />
       </header>
 
-      <h5 className="opacity-70 text-2xl mb-2">Front-end Engineer</h5>
-
-      <p className="text-md md:text-lg text-muted-foreground">
-        Building high-quality web applications. Join 1K+ developers learning
-        tips and strategies from my journey.
+      <p className="mt-4 text-md md:text-xl text-muted-foreground">
+        <span className="text-white opacity-90 font-medium">
+          Front-end Engineer
+        </span>{" "}
+        building high-quality and scalable web applications. Join 1K+ developers
+        learning tips and strategies from my journey.
       </p>
 
       <form
