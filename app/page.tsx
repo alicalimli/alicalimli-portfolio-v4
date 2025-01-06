@@ -7,6 +7,7 @@ import ScrollToTopButton from "@/components/ui/scroll-to-top-button";
 import Footer from "@/sections/footer/footer";
 import Profile from "@/sections/profile/Profile";
 import ScrollTracker from "@/components/ui/scroll-tracker";
+import ContactSection from "@/sections/contact-section/contact-section";
 
 export default function Home() {
   return (
@@ -16,16 +17,16 @@ export default function Home() {
         <aside className="xl:sticky xl:top-0 xl:h-screen text-white p-16 pt-24 pb-0 max-w-4xl mx-auto xl:max-w-[auto] flex flex-col gap-12">
           <Profile />
 
-          <div className="p-4 h-full hidden xl:block">
+          <div className="p-4 pb-0 h-full hidden xl:block">
             <ScrollTracker />
           </div>
         </aside>
 
         {/* Main Content */}
         <main className=" overflow-y-auto p-16 pt-4 xl:pt-24 max-w-4xl mx-auto xl:max-w-[auto]">
-          <div id="about-me-section" className="app-section">
+          {/* <div id="about-me-section" className="app-section">
             <AboutMe />
-          </div>
+          </div> */}
 
           <div id="newsletter-section" className="app-section">
             <NewsletterSection />
@@ -42,10 +43,12 @@ export default function Home() {
               <StackSection />
             </div>
 
-            <hr />
-
             <div id="featured-tweets-section" className="app-section w-full">
               <FeaturedTweets />
+            </div>
+
+            <div id="contact-section" className="app-section">
+              <ContactSection />
             </div>
           </main>
           <Footer />

@@ -32,7 +32,7 @@ const Profile = ({}: ProfileProps) => {
         <AvatarFallback>AL</AvatarFallback>
       </Avatar>
 
-      <header className="scroll-m-20 font-semibold my-2 mt-4 tracking-tight flex items-center gap-2">
+      <header className="scroll-m-20 font-semibold mt-4 tracking-tight flex items-center gap-2">
         <SpringyText
           className="justify-center text-3xl md:text-4xl xl:text-5xl"
           text={"Ali Calimli"}
@@ -45,9 +45,11 @@ const Profile = ({}: ProfileProps) => {
         <SocialLinks iconSize="size-6  md:size-8 xl:size-9" />
       </header>
 
-      <p className="text-md md:text-lg xl:text-xl text-muted-foreground">
-        I send 1k+ developers tips, strategies, and resources that would help
-        them succeed in their web development journey.
+      <h5 className="opacity-70 text-2xl mb-2">Front-end Engineer</h5>
+
+      <p className="text-md md:text-lg text-muted-foreground">
+        Building high-quality web applications. Join 1K+ developers learning
+        tips and strategies from my journey.
       </p>
 
       <form

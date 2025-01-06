@@ -71,7 +71,7 @@ export const projects: ItemProps[] = [
     thumbnail:
       "https://firebasestorage.googleapis.com/v0/b/webdev-visuals.appspot.com/o/misc%2Fsrswti-home.webp?alt=media&token=612beab7-c08a-488a-827f-f0b28bad7588",
     description:
-      "A Fullstack Chatapp that I've built to learn more about React and its popular libraries like redux, and also learn to use Firebase.",
+      "Led front-end development of a global knowledge and inference platform with multiple integrated applications. Architected and maintained core features that enable seamless knowledge sharing and inference capabilities across organizations.",
     cta: "Visit Website",
     role: "Full Stack Development",
     link: "https://ac-messenger-p.web.app/",
@@ -81,15 +81,15 @@ export const projects: ItemProps[] = [
     thumbnail:
       "https://firebasestorage.googleapis.com/v0/b/webdev-visuals.appspot.com/o/misc%2Fmagicnotes%20(1).webp?alt=media&token=51ea4c23-39e4-45b2-aeba-3b0451ceb033",
     description:
-      "A Vanilla JS Project that I have built to deepen my knowledge about HTML, CSS and JavaScript and practice consuming API’s as well.",
+      "Developed an AI-powered note-taking platform from concept to deployment. Implemented real-time text processing and seamless integration with large language models for automated note generation.",
     cta: "Visit Website",
     role: "Full Stack Development",
-    link: "https://moviematrix.netlify.app/",
+    link: "https://www.magicnotes.app/",
   },
   {
     title: "WebDevVisuals",
     description:
-      "A platform to learn tips & tricks that would take your web dev skills to the next level all in one place.",
+      "Built and launched a developer education platform focused on practical tips and front-end development techniques through visual tutorials. Led end-to-end development from concept to launch, including a custom admin dashboard that streamlined content management.",
     cta: "Learn more",
     role: "Full Stack Development",
     link: "https://www.webdevvisuals.com/",
@@ -101,7 +101,7 @@ export const projects: ItemProps[] = [
     thumbnail:
       "https://firebasestorage.googleapis.com/v0/b/webdev-visuals.appspot.com/o/misc%2Facmessenger.webp?alt=media&token=fdc201e4-bf18-493a-b9ab-58d41149741b",
     description:
-      "A real-time chat app using React and Firebase. I've built this project to explore state management with Redux Toolkit and deepen my knowledge with React and its libaries. TailwindCSS and Framer motion was used to provide a fluid User Experience.",
+      "Dveloped an interactive real-time chat application featuring instant messaging and seamless user interactions. Engineered smooth animations and real-time updates, gained positive reviews for its polished user interface and user experience.",
 
     cta: "Experience ACMessenger",
     role: "Lead Designer & Full Stack Developer",
@@ -125,7 +125,7 @@ export const projects: ItemProps[] = [
     sourceCode: "https://github.com/alicalimli/movie-matrix-app/",
     twitter: "https://x.com/alicalimli_dev/status/1530437661990830080",
     description:
-      "A platform to explore shows and movies built with vanilla JavaScript and MVC pattern, using TMDB API to show the latest movies in an easy-to-use format.",
+      "Built a user-friendly movie discovery platform using MVC architecture that helps users explore and find their next favorite shows. Implemented responsive design and advanced filtering features, receiving positive user reviews for its intuitive interface.",
     cta: "Visit Website",
     role: "Design & Development",
     link: "https://moviematrix.netlify.app/",
@@ -138,7 +138,7 @@ export const projects: ItemProps[] = [
       "https://firebasestorage.googleapis.com/v0/b/webdev-visuals.appspot.com/o/misc%2Faliv2-portfolio.webp?alt=media&token=e1d1e208-bf90-4556-b80e-4932656cbc07",
     sourceCode: "https://github.com/alicalimli/alicalimli-portfolio/",
     description:
-      "A modern, minimalist portfolio website built with Next.js and TypeScript to showcase my latest projects and professional journey in web development.",
+      "Designed and developed a minimalist portfolio showcasing my professional journey with smooth animations and optimal performance.",
     cta: "Visit Website",
     role: "Design & Development",
     link: "https://v2.alicalimli.com/",

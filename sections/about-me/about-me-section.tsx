@@ -1,13 +1,12 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import React from "react";
-import ContactSection from "./contact-form";
 
 interface AboutMeProps {}
 
 const AboutMe = ({}: AboutMeProps) => {
   return (
     <section className="flex flex-col gap-4 leading-7 text-muted-foreground text-lg">
-      <p className="text-white/85 font-semibold">
+      <p className="">
         Hey, Ali Here! 👋
         <br />
         I'm a Front-end Engineer and I Create Web Development Content.

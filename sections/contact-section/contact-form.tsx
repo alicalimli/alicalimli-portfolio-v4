@@ -12,6 +12,8 @@ import { cn } from "@/lib/utils";
 import { toast } from "sonner";
 import { LoaderIcon } from "lucide-react";
 import Conditional from "@/components/conditional/Conditional";
+import ModernInput from "@/components/ui/modern-input";
+import { Magnetic } from "@/components/ui/magnetic";
 
 const formSchema = z.object({
   name: z.string().min(2, {
@@ -101,7 +103,7 @@ const ContactForm = ({}: ContactFormProps) => {
     <Form {...form}>
       <form
         onSubmit={form.handleSubmit(onSubmit)}
-        className="flex flex-col gap-4"
+        className="flex flex-col gap-4 mb-12"
       >
         <FormField
           control={form.control}
@@ -109,7 +111,14 @@ const ContactForm = ({}: ContactFormProps) => {
           render={({ field }) => (
             <FormItem error={formErrors.name?.message} className="flex-1">
               <FormControl>
-                <FloatingInput disabled={isSending} label="Name" {...field} />
+                <ModernInput
+                  isFirst={true}
+                  number="01"
+                  disabled={isSending}
+                  label="Name"
+                  placeholder="John Doe"
+                  {...field}
+                />
               </FormControl>
             </FormItem>
           )}
@@ -121,7 +130,13 @@ const ContactForm = ({}: ContactFormProps) => {
           render={({ field }) => (
             <FormItem error={formErrors.email?.message}>
               <FormControl>
-                <FloatingInput disabled={isSending} label="Email" {...field} />
+                <ModernInput
+                  number="02"
+                  placeholder="johndoe@email.com"
+                  disabled={isSending}
+                  label="Email"
+                  {...field}
+                />
               </FormControl>
             </FormItem>
           )}
@@ -136,7 +151,9 @@ const ContactForm = ({}: ContactFormProps) => {
               className="basis-full"
             >
               <FormControl>
-                <FloatingInput
+                <ModernInput
+                  number="03"
+                  placeholder="Front-end Development"
                   disabled={isSending}
                   label="Subject"
                   {...field}
@@ -155,14 +172,18 @@ const ContactForm = ({}: ContactFormProps) => {
               className="basis-full"
             >
               <FormControl>
-                <FloatingInput
+                <ModernInput
+                  number="04"
                   customInput={(inputId, className) => (
                     <textarea
                       id={inputId}
                       disabled={isSending}
-                      className={cn(className, "resize-none h-40")}
+                      className={cn(
+                        className,
+                        "scrollbar-hide resize-none h-64"
+                      )}
                       {...field}
-                      placeholder=""
+                      placeholder="Hey Ali! I’d love to discuss something with you..."
                     />
                   )}
                   label="Type your message here."
@@ -171,18 +192,23 @@ const ContactForm = ({}: ContactFormProps) => {
             </FormItem>
           )}
         />
-        <Button
-          variant={"secondary"}
-          disabled={isSending}
-          className="w-full mt-4"
-          type="submit"
-        >
-          <Conditional condition={isSending}>
-            <LoaderIcon className="animate-spin block w-5 mr-1" />
-          </Conditional>
-          Send Message
-        </Button>
       </form>
+
+      <div className="absolute bottom-0 right-8 translate-y-1/2">
+        <Magnetic>
+          <Button
+            variant={"secondary"}
+            disabled={isSending}
+            className="w-fit p-6 px-10 rounded-full h-auto justify-self-end"
+            type="submit"
+          >
+            <Conditional condition={isSending}>
+              <LoaderIcon className="animate-spin block w-5 mr-1" />
+            </Conditional>
+            Send Message
+          </Button>
+        </Magnetic>
+      </div>
     </Form>
   );
 };
