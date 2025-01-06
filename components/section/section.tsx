@@ -13,11 +13,13 @@ interface SectionProps {
   viewAllLink?: string;
   children: ReactNode;
   titleIcon?: any;
+  viewAllFunction?: () => void;
 }
 
 const Section = ({
   title,
   viewAllLink,
+  viewAllFunction,
   className,
   headerClassName,
   mainClassName,
@@ -49,6 +51,17 @@ const Section = ({
               View All
               <ArrowRightIcon className="w-5 group-hover:translate-x-1 duration-200" />
             </a>
+          </Button>
+        )}
+
+        {viewAllFunction && (
+          <Button
+            variant={"ghost"}
+            onClick={() => viewAllFunction()}
+            className="ml-auto flex items-center gap-2 text-sm text-muted-foreground group"
+          >
+            View All
+            <ArrowRightIcon className="w-5 group-hover:translate-x-1 duration-200" />
           </Button>
         )}
       </header>

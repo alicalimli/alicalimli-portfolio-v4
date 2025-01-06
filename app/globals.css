@@ -78,6 +78,10 @@ select:-webkit-autofill:focus {
   }
 }
 
+.tweet-container_root__0rJLq {
+  margin: 0 !important;
+}
+
 :root {
   color-scheme: dark;
 }
