@@ -11,12 +11,12 @@ import ScrollTracker from "@/components/ui/scroll-tracker";
 export default function Home() {
   return (
     <>
-      <div className="grid xl:grid-cols-2 max-w-[1600px] mx-auto min-h-screen">
+      <div className="block xl:grid xl:grid-cols-2 -w-[1600px] mx-auto min-h-screen">
         {/* Sidebar */}
-        <aside className="xl:sticky xl:top-0 xl:h-screen text-white p-16 pt-24 pb-0 max-w-4xl mx-auto xl:max-w-[auto]">
+        <aside className="xl:sticky xl:top-0 xl:h-screen text-white p-16 pt-24 pb-0 max-w-4xl mx-auto xl:max-w-[auto] flex flex-col gap-12">
           <Profile />
 
-          <div className="absolute bottom-12 left-[74px]">
+          <div className="p-4 h-full hidden xl:block">
             <ScrollTracker />
           </div>
         </aside>

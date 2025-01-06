@@ -54,7 +54,7 @@ const ScrollTracker = ({}: ScrollTrackerProps) => {
   });
 
   return (
-    <div className="bg-[#333] h-96 w-[2px] relative ">
+    <div className="bg-[#333] h-full w-[2px] relative ">
       <motion.div
         style={{ height }}
         className="absolute w-full top-0 left-0 bg-primary"

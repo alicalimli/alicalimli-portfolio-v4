@@ -6,6 +6,11 @@
   /* border: 1px solid red; */
 }
 
+* {
+  scroll-behavior: smooth;
+  scroll-padding-top: 30px;
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;

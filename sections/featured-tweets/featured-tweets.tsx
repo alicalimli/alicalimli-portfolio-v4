@@ -13,7 +13,7 @@ const FeaturedTweets = ({}: FeaturedTweetsProps) => {
   return (
     <Section
       titleIcon={XLogo}
-      mainClassName="featured-tweets-section max-w-[90svw] xl:max-w-[40svw]"
+      mainClassName="featured-tweets-section xl:max-w-[40svw] overflow-hidden"
       title="Featured Tweets"
     >
       <Marquee pauseOnHover>

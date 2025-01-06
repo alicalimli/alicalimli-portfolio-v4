@@ -37,7 +37,7 @@ const Section = ({
           text={title}
         />
 
-        {titleIcon && <Icon weight="fill" className="ml-2 size-7 opacity-70" />}
+        {/* {titleIcon && <Icon weight="fill" className="ml-2 size-7 opacity-70" />} */}
 
         {!viewAllLink ? null : (
           <Button
