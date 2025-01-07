@@ -25,20 +25,20 @@ const sections = [
   {
     id: "tect-stack-section",
     label: "Tech Stack & Blogs",
-    top: "top-[53%]",
-    highlightOn: 0.53,
+    top: "top-[52%]",
+    highlightOn: 0.52,
   },
   {
     id: "featured-tweets-section",
     label: "Tweets",
-    top: "top-[70%]",
-    highlightOn: 0.7,
+    top: "top-[69%]",
+    highlightOn: 0.69,
   },
   {
     id: "contact-section",
     label: "Get In Touch",
-    top: "top-[94%]",
-    highlightOn: 0.94,
+    top: "top-[90%]",
+    highlightOn: 0.9,
   },
 ];
 

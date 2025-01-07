@@ -55,7 +55,7 @@ const NewsletterSection = () => {
           setDrawerOpen(false);
         }}
       >
-        <DrawerContent className="w-screen sm:w-[95svw] mx-auto max-w-4xl ">
+        <DrawerContent className="w-screen sm:w-[95svw] mx-auto max-w-4xl  rounded-t-[32px] ">
           <button
             onClick={() => setDrawerOpen(false)}
             className="hidden sm:block bg-[#222] rounded-full p-3 absolute sm:top-10 sm:left-10 w-fit hover:bg-[#111] duration-300"

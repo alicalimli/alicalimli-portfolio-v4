@@ -8,7 +8,7 @@ import Image from "next/image";
 import SocialLinks from "@/components/social-links/social-links";
 import NewsletterSection from "../newsletter-section/newsletter-section";
 import SpringyText from "@/components/springy-text/SpringyText";
-import { SealCheck } from "@phosphor-icons/react";
+import { CaretRight, SealCheck } from "@phosphor-icons/react";
 
 interface ProfileProps {}
 
@@ -55,19 +55,24 @@ const Profile = ({}: ProfileProps) => {
 
       <form
         onSubmit={handleSubmit}
-        className="flex flex-col xs:flex-row gap-2 w-full mt-4"
+        className="flex flex-col xs:flex-row gap-2 w-full mt-4 relative"
       >
         <Input
-          className="p-3 xs:p-4 h-auto"
+          className="p-4 px-6 sm:p-5 sm:px-8 h-auto rounded-full"
           type="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           required
           placeholder="Enter your email"
         />
-        <Button size="lg" className="h-auto p-3 xs:p-4 xs:w-52">
-          Join In
-        </Button>
+        <div className="h-full absolute right-0 top-1/2 -translate-y-1/2 p-2 aspect-square sm:aspect-video">
+          <Button size="lg" className="h-full rounded-full p-2 w-full">
+            <span className="hidden sm:inline-block">Join In</span>
+            <span className="sm:hidden">
+              <CaretRight />
+            </span>
+          </Button>
+        </div>
       </form>
     </header>
   );

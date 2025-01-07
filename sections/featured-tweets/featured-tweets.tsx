@@ -51,7 +51,7 @@ const FeaturedTweets = ({}: FeaturedTweetsProps) => {
           setDrawerOpen(false);
         }}
       >
-        <DrawerContent className="w-screen sm:w-[95svw] mx-auto max-w-6xl bg-[#111] pb-0">
+        <DrawerContent className="w-screen sm:w-[95svw] mx-auto max-w-6xl bg-[#111] pb-0 rounded-t-[32px]">
           <button
             onClick={() => setDrawerOpen(false)}
             className="hover:opacity-80 text-2xl flex items-center mx-4  sm:mx-12 my-4"
