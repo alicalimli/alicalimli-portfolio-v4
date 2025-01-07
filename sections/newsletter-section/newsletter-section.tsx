@@ -17,6 +17,7 @@ import {
 } from "@/components/ui/drawer";
 import { DATA_NEWSLETTERS } from "@/data-newsletters";
 import { useState } from "react";
+import { NewsletterCard } from "../footer/newsletter-card";
 
 const NewsletterSection = () => {
   const [activeNewsletter, setActiveNewsletter] = useState<string | null>(null);
@@ -64,6 +65,10 @@ const NewsletterSection = () => {
 
           <section className="max-h-[80svh] sm:max-h-[90svh] scrollbar-hide overflow-y-auto  px-4 sm:px-12 mt-4">
             {data?.content}
+
+            <div className="mt-12"></div>
+
+            <NewsletterCard />
           </section>
 
           <DrawerFooter>

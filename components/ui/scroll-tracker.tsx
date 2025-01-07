@@ -11,34 +11,34 @@ import { cn } from "@/lib/utils";
 
 const sections = [
   {
-    id: "about-me-section",
-    label: "About Me",
+    id: "newsletter-section",
+    label: "Newsletter",
     top: "-top-4",
     highlightOn: 0,
   },
   {
-    id: "newsletter-section",
-    label: "Newsletter",
+    id: "projects-section",
+    label: "Projects",
     top: "top-[13%]",
     highlightOn: 0.13,
   },
   {
-    id: "projects-section",
-    label: "Projects",
-    top: "top-[30%]",
-    highlightOn: 0.3,
-  },
-  {
     id: "tect-stack-section",
-    label: "Tech Stack",
-    top: "top-[80%]",
-    highlightOn: 0.8,
+    label: "Tech Stack & Blogs",
+    top: "top-[53%]",
+    highlightOn: 0.53,
   },
   {
     id: "featured-tweets-section",
     label: "Tweets",
-    top: "top-[90%]",
-    highlightOn: 0.9,
+    top: "top-[70%]",
+    highlightOn: 0.7,
+  },
+  {
+    id: "contact-section",
+    label: "Get In Touch",
+    top: "top-[94%]",
+    highlightOn: 0.94,
   },
 ];
 
