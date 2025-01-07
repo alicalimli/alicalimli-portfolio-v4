@@ -109,6 +109,7 @@ export const techBlogsData = [
     thumbnail:
       "https://firebasestorage.googleapis.com/v0/b/webdev-visuals.appspot.com/o/misc%2Fwin-calendar.webp?alt=media&token=180be5d4-ba61-4b6e-8fe8-b611a5a1acb1",
     link: "https://blog.alicalimli.com/windows-10-calendar-hover-effect-a-step-by-step-tutorial",
+    cta: "read now",
   },
   {
     title: "Windows 10 Setting Hover Effect: A Step By Step Tutorial",
@@ -117,6 +118,7 @@ export const techBlogsData = [
     thumbnail:
       "https://firebasestorage.googleapis.com/v0/b/webdev-visuals.appspot.com/o/misc%2Fwin-settings.webp?alt=media&token=9dff6dea-82dc-4771-867e-35099cf7eec5",
     link: "https://blog.alicalimli.com/windows-10-setting-hover-effect-a-step-by-step-tutorial",
+    cta: "read now",
   },
 ];
 
