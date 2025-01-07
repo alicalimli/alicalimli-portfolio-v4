@@ -45,7 +45,7 @@ const Profile = ({}: ProfileProps) => {
         <SocialLinks iconSize="size-6  md:size-8 xl:size-9" />
       </header>
 
-      <p className="mt-3 text-md md:text-xl text-muted-foreground max-w-xl leading-[1.7] md:leading-[1.7]">
+      <p className="mt-3 text-md md:text-xl text-muted-foreground lg:max-w-xl leading-[1.7] md:leading-[1.7]">
         <span className="text-white opacity-90 font-medium">
           Front-end Engineer
         </span>{" "}
