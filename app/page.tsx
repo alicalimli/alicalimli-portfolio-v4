@@ -8,6 +8,7 @@ import Footer from "@/sections/footer/footer";
 import Profile from "@/sections/profile/Profile";
 import ScrollTracker from "@/components/ui/scroll-tracker";
 import ContactSection from "@/sections/contact-section/contact-section";
+import TechBlogsSection from "@/sections/tech-blogs-section/tech-blogs-section";
 
 export default function Home() {
   return (
@@ -41,6 +42,10 @@ export default function Home() {
 
             <div id="tect-stack-section" className="app-section">
               <StackSection />
+            </div>
+
+            <div id="tech-blogs-section" className="app-section w-full">
+              <TechBlogsSection />
             </div>
 
             <div id="featured-tweets-section" className="app-section w-full">

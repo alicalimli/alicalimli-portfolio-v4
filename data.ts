@@ -101,6 +101,25 @@ export const featuredTweets = [
   },
 ];
 
+export const techBlogsData = [
+  {
+    title: "Windows 10 Calendar Hover Effect: A Step By Step Tutorial",
+    description:
+      "Learn how to achieve this awesome windows 10 calendar like border hover effect that you can use in your website",
+    thumbnail:
+      "https://firebasestorage.googleapis.com/v0/b/webdev-visuals.appspot.com/o/misc%2Fwin-calendar.webp?alt=media&token=180be5d4-ba61-4b6e-8fe8-b611a5a1acb1",
+    link: "https://blog.alicalimli.com/windows-10-calendar-hover-effect-a-step-by-step-tutorial",
+  },
+  {
+    title: "Windows 10 Setting Hover Effect: A Step By Step Tutorial",
+    description:
+      "Learn how to create this windows 10 settings hover effect that you can use in your website with HTML, CSS and JavaScript",
+    thumbnail:
+      "https://firebasestorage.googleapis.com/v0/b/webdev-visuals.appspot.com/o/misc%2Fwin-settings.webp?alt=media&token=9dff6dea-82dc-4771-867e-35099cf7eec5",
+    link: "https://blog.alicalimli.com/windows-10-setting-hover-effect-a-step-by-step-tutorial",
+  },
+];
+
 export const socialLinks = [
   {
     tooltip: "@alicalimli_dev on Twitter/X",
