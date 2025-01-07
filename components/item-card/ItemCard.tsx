@@ -128,7 +128,7 @@ const ItemCard = ({ item }: ItemCardProps) => {
               </TooltipProvider>
             </Conditional>
           </h5>
-          <p className="text-sm text-muted-foreground mt-1">
+          <p className="text-sm text-muted-foreground mt-1 leading-[1.8]">
             {item.description}
           </p>
 

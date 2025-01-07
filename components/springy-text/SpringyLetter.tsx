@@ -38,7 +38,7 @@ const SpringyLetter = ({ letter }: SpringyLetterProps) => {
       whileHover={{ color: "#3897e9" }}
       onMouseOver={() => springAnimation()}
       onAnimationComplete={() => setIsPlaying(false)}
-      className="inline-block font-bold text-text-main"
+      className="inline-block font-semibold text-text-main"
     >
       {letter === " " ? "\u00A0" : letter}
     </motion.span>

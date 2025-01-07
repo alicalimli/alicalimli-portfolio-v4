@@ -45,7 +45,7 @@ const Profile = ({}: ProfileProps) => {
         <SocialLinks iconSize="size-6  md:size-8 xl:size-9" />
       </header>
 
-      <p className="mt-4 text-md md:text-xl text-muted-foreground">
+      <p className="mt-3 text-md md:text-xl text-muted-foreground max-w-xl leading-[1.7] md:leading-[1.7]">
         <span className="text-white opacity-90 font-medium">
           Front-end Engineer
         </span>{" "}
@@ -55,17 +55,17 @@ const Profile = ({}: ProfileProps) => {
 
       <form
         onSubmit={handleSubmit}
-        className="flex flex-col xs:flex-row gap-2 w-full items-center mt-4"
+        className="flex flex-col xs:flex-row gap-2 w-full mt-4"
       >
         <Input
-          className="h-11"
+          className="p-3 xs:p-4 h-auto"
           type="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           required
           placeholder="Enter your email"
         />
-        <Button size="lg" className="w-full xs:w-40">
+        <Button size="lg" className="h-auto p-3 xs:p-4 xs:w-52">
           Join In
         </Button>
       </form>

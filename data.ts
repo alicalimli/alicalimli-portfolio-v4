@@ -28,6 +28,20 @@ export const featuredTweets = [
     id: "1715979202661392881",
     source: "https://x.com/alicalimli_dev/status/1715979202661392881",
   },
+
+  {
+    id: "1684088694414938113",
+    source: "https://x.com/alicalimli_dev/status/1684088694414938113",
+  },
+  {
+    id: "1698222391824896487",
+    source: "https://x.com/alicalimli_dev/status/1698222391824896487",
+  },
+
+  {
+    id: "1685901442257936384",
+    source: "https://x.com/alicalimli_dev/status/1685901442257936384",
+  },
   {
     id: "1739552586041061459",
     source: "https://x.com/alicalimli_dev/status/1739552586041061459",
@@ -37,8 +51,53 @@ export const featuredTweets = [
     source: "https://x.com/alicalimli_dev/status/1731927377314295864",
   },
   {
-    id: "1684088694414938113",
-    source: "https://x.com/alicalimli_dev/status/1684088694414938113",
+    id: "1718517019660689685",
+    source: "https://x.com/alicalimli_dev/status/1718517019660689685",
+  },
+  {
+    id: "1690612219728609281",
+    source: "https://x.com/alicalimli_dev/status/1690612219728609281",
+  },
+  {
+    id: "1700895465032548598",
+    source: "https://x.com/alicalimli_dev/status/1700895465032548598",
+  },
+  {
+    id: "1653286060238012419",
+    source: "https://x.com/alicalimli_dev/status/1653286060238012419",
+  },
+
+  {
+    id: "1718878763293831329",
+    source: "https://x.com/alicalimli_dev/status/1718878763293831329",
+  },
+  {
+    id: "1729032781894688904",
+    source: "https://x.com/alicalimli_dev/status/1729032781894688904",
+  },
+  {
+    id: "1750066021355118986",
+    source: "https://x.com/alicalimli_dev/status/1750066021355118986",
+  },
+  {
+    id: "1763587528572141881",
+    source: "https://x.com/alicalimli_dev/status/1763587528572141881",
+  },
+  {
+    id: "1751598502956999116",
+    source: "https://x.com/alicalimli_dev/status/1751598502956999116",
+  },
+  {
+    id: "1692061757861196009",
+    source: "https://x.com/alicalimli_dev/status/1692061757861196009",
+  },
+  {
+    id: "1735909696232370204",
+    source: "https://x.com/alicalimli_dev/status/1735909696232370204",
+  },
+  {
+    id: "1682639405838925825",
+    source: "https://x.com/alicalimli_dev/status/1682639405838925825",
   },
 ];
 

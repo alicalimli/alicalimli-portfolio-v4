@@ -14,7 +14,7 @@ export default function Home() {
     <>
       <div className="block xl:grid xl:grid-cols-2 -w-[1600px] mx-auto min-h-screen">
         {/* Sidebar */}
-        <aside className="xl:sticky xl:top-0 xl:h-screen text-white p-16 pt-24 pb-0 max-w-4xl mx-auto xl:max-w-[auto] flex flex-col gap-12">
+        <aside className="xl:sticky xl:top-0 xl:h-screen text-white p-8 sm:p-16 pt-24 pb-0 max-w-4xl mx-auto xl:max-w-[auto] flex flex-col gap-12">
           <Profile />
 
           <div className="p-4 pb-0 h-full hidden xl:block">
@@ -23,7 +23,7 @@ export default function Home() {
         </aside>
 
         {/* Main Content */}
-        <main className=" overflow-y-auto p-16 pt-4 xl:pt-24 max-w-4xl mx-auto xl:max-w-[auto]">
+        <main className=" overflow-y-auto p-8 sm:p-16 pt-4 xl:pt-24 max-w-4xl mx-auto xl:max-w-[auto]">
           {/* <div id="about-me-section" className="app-section">
             <AboutMe />
           </div> */}

@@ -36,7 +36,7 @@ const FeaturedTweets = ({}: FeaturedTweetsProps) => {
         viewAllFunction={() => setDrawerOpen(true)}
       >
         <Marquee pauseOnHover>
-          {featuredTweets.map((t) => (
+          {featuredTweets.slice(0, 8).map((t) => (
             <div key={t.id} className="mx-4" data-theme="dark">
               <Tweet id={t.id} />
             </div>

@@ -1,5 +1,6 @@
 "use client";
 
+import SpringyText from "@/components/springy-text/SpringyText";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -23,7 +24,10 @@ export function NewsletterCard() {
   return (
     <Card>
       <CardHeader>
-        <CardTitle>Empower your Web Dev Journey</CardTitle>
+        <SpringyText
+          className="justify-start text-2xl opacity-90 "
+          text={"Empower your Web Dev Journey"}
+        />
         <CardDescription>
           Join 1k+ developers getting tips, strategies, and resources that would
           help you succeed in your web dev journey.
@@ -35,13 +39,16 @@ export function NewsletterCard() {
           className="flex flex-col xs:flex-row gap-2 w-full"
         >
           <Input
+            className="p-3 xs:p-4 h-auto"
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
             placeholder="Enter your email"
           />
-          <Button className="w-full xs:w-40">Join In</Button>
+          <Button size="lg" className="h-auto p-3 xs:p-4 xs:w-52">
+            Join In
+          </Button>
         </form>
       </CardFooter>
     </Card>
