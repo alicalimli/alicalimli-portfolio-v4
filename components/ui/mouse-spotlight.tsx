@@ -27,7 +27,7 @@ const MouseSpotlight = () => {
         style={{
           background: `radial-gradient(
             1200px circle at ${mousePos.x} ${mousePos.y},
-            rgba(255, 255, 255, 0.02),
+            rgba(255, 255, 255, 0.03),
             transparent 60%
           )`,
         }}
