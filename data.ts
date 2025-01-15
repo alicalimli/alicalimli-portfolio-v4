@@ -150,21 +150,33 @@ export const projects: ItemProps[] = [
     title: "SRSWTI",
     thumbnail:
       "https://firebasestorage.googleapis.com/v0/b/webdev-visuals.appspot.com/o/misc%2Fsrswti-home.webp?alt=media&token=612beab7-c08a-488a-827f-f0b28bad7588",
-    description:
-      "Led front-end development of a global knowledge sharing platform with multiple integrated web applications. Built and maintained core features that make knowledge discovery and research more accessible.",
+    description: "A Global Knowledge and Inference Platform",
     cta: "Visit Website",
     role: "Full Stack Development",
     link: "https://ac-messenger-p.web.app/",
+    technologies: [
+      "Front-end Engineering",
+      "Webapplications",
+      "UI/UX Design",
+      "Backend",
+      "Databases",
+    ],
   },
   {
     title: "MagicNotes",
     thumbnail:
       "https://firebasestorage.googleapis.com/v0/b/webdev-visuals.appspot.com/o/misc%2Fmagicnotes%20(1).webp?alt=media&token=51ea4c23-39e4-45b2-aeba-3b0451ceb033",
-    description:
-      "Developed an AI-powered note-taking platform. Implemented real-time text processing and seamless integration with large language models for automated note generation.",
+    description: "Turn Anything into Notes Like Magic",
     cta: "Visit Website",
     role: "Full Stack Development",
     link: "https://www.magicnotes.app/",
+    technologies: [
+      "Front-end Engineering",
+      "UI/UX Design",
+      "Backend",
+      "Databases",
+      "Marketing",
+    ],
   },
   {
     title: "WebDevVisuals",
@@ -175,6 +187,13 @@ export const projects: ItemProps[] = [
     link: "https://www.webdevvisuals.com/",
     thumbnail:
       "https://firebasestorage.googleapis.com/v0/b/webdev-visuals.appspot.com/o/misc%2Fwebdevvisuals.webp?alt=media&token=2bd3e819-1333-464a-8db1-491675d8d416",
+    technologies: [
+      "Front-end Engineering",
+      "UI/UX Design",
+      "Backend",
+      "Databases",
+      "Marketing",
+    ],
   },
   {
     title: "ACMessenger",
