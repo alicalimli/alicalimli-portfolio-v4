@@ -151,7 +151,7 @@ export const projects: ItemProps[] = [
     thumbnail:
       "https://firebasestorage.googleapis.com/v0/b/webdev-visuals.appspot.com/o/misc%2Fsrswti-home.webp?alt=media&token=612beab7-c08a-488a-827f-f0b28bad7588",
     description:
-      "Led front-end development of a global knowledge and inference platform with multiple integrated applications. Architected and maintained core features that enable seamless knowledge sharing and inference capabilities across organizations.",
+      "Led front-end development of a global knowledge sharing platform with multiple integrated web applications. Built and maintained core features that make knowledge discovery and research more accessible.",
     cta: "Visit Website",
     role: "Full Stack Development",
     link: "https://ac-messenger-p.web.app/",
@@ -161,7 +161,7 @@ export const projects: ItemProps[] = [
     thumbnail:
       "https://firebasestorage.googleapis.com/v0/b/webdev-visuals.appspot.com/o/misc%2Fmagicnotes%20(1).webp?alt=media&token=51ea4c23-39e4-45b2-aeba-3b0451ceb033",
     description:
-      "Developed an AI-powered note-taking platform from concept to deployment. Implemented real-time text processing and seamless integration with large language models for automated note generation.",
+      "Developed an AI-powered note-taking platform. Implemented real-time text processing and seamless integration with large language models for automated note generation.",
     cta: "Visit Website",
     role: "Full Stack Development",
     link: "https://www.magicnotes.app/",
