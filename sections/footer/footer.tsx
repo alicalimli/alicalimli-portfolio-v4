@@ -13,8 +13,8 @@ const Footer = ({}: FooterProps) => {
       <NewsletterCard />
 
       <div className="flex items-center mt-2">
-        <p className="text-xs text-muted-foreground">
-          © {currentYear} Designed and Developed by Ali Calimli.
+        <p className="text-xs text-muted-foreground w-[50%]">
+          © {currentYear} Designed and Developed by Ali Calimli
         </p>
 
         <SocialLinks className="ml-auto" />

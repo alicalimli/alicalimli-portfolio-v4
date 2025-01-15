@@ -1,3 +1,5 @@
+"use client";
+
 import Section from "@/components/section/section";
 import { Badge } from "@/components/ui/badge";
 import {
@@ -7,6 +9,7 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 import { techStack } from "@/data";
+import { Stack } from "@phosphor-icons/react";
 
 const StackSection = () => {
   const renderTechs = techStack.map(({ name, Icon, tooltip }) => (
@@ -27,7 +30,7 @@ const StackSection = () => {
   ));
 
   return (
-    <Section title="Tech Stack">
+    <Section titleIcon={Stack} title="Tech Stack">
       <ul className="grid grid-cols-2 xs:flex gap-2 flex-wrap">
         {renderTechs}
       </ul>

@@ -2,6 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  scroll-behavior: smooth;
+  scroll-padding-top: 30px;
+  /* border: 1px solid red; */
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: 1px solid transparent !important;
+  -webkit-box-shadow: 0 0 0px 1000px transparent inset !important;
+  transition: background-color 5000s ease-in-out 0s !important;
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -23,7 +43,7 @@
     --border: 240 5.9% 90%;
     --input: 240 5.9% 90%;
     --ring: 346.8 77.2% 49.8%;
-    --radius: 0.5rem;
+    --radius: 1rem;
   }
 
   .dark {
@@ -58,6 +78,101 @@
   }
 }
 
+.tweet-container_root__0rJLq {
+  margin: 0 !important;
+}
+
 :root {
   color-scheme: dark;
+}
+
+.item-card,
+.app-section {
+  opacity: 1;
+  transition: all 0.45s ease;
+}
+
+.featured-tweets-section {
+  mask-image: linear-gradient(to left, transparent, #222, transparent);
+}
+
+@media (hover: hover) {
+  .item-card:has(~ .item-card:hover),
+  .item-card:hover ~ .item-card {
+    opacity: 0.3;
+  }
+
+  .app-section:has(~ .app-section:hover),
+  .app-section:hover ~ .app-section {
+    opacity: 0.3;
+  }
+
+  /* ::-webkit-scrollbar {
+    width: 18px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+    margin-block: 0.5rem;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border: 6px solid #090909;
+    background: #222;
+    border-radius: 100vmax;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #666;
+  } */
+
+  html::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  html {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}
+
+.profile-avatar {
+  position: relative;
+}
+.profile-avatar::before {
+  position: absolute;
+  top: 0;
+  left: -75%;
+  z-index: 2;
+  display: block;
+  content: "";
+  width: 50%;
+  height: 100%;
+  background: -webkit-linear-gradient(
+    left,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.3) 100%
+  );
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.3) 100%
+  );
+  -webkit-transform: skewX(-25deg);
+  transform: skewX(-25deg);
+}
+.profile-avatar:hover::before {
+  -webkit-animation: shine 0.75s;
+  animation: shine 0.75s;
+}
+@-webkit-keyframes shine {
+  100% {
+    left: 125%;
+  }
+}
+@keyframes shine {
+  100% {
+    left: 125%;
+  }
 }

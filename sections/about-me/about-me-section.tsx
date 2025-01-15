@@ -1,21 +1,15 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import React from "react";
-import ContactSection from "./contact-form";
 
 interface AboutMeProps {}
 
 const AboutMe = ({}: AboutMeProps) => {
   return (
     <section className="flex flex-col gap-4 leading-7 text-muted-foreground text-lg">
-      <Avatar className="w-20 h-20">
-        <AvatarImage src="/alicalimli.jpg" alt="Ali Calimli's Profile" />
-        <AvatarFallback>AL</AvatarFallback>
-      </Avatar>
-
-      <p className="text-white/85 font-semibold">
+      <p className="">
         Hey, Ali Here! 👋
         <br />
-        I'm a Front-end Developer and I Create Web Development Content.
+        I'm a Front-end Engineer and I Create Web Development Content.
       </p>
 
       <p>
@@ -31,10 +25,6 @@ const AboutMe = ({}: AboutMeProps) => {
       <p className="mb-2">
         Let's chat! Hit me up on the form below or in any of my socials.
       </p>
-
-      <footer className="relative">
-        <ContactSection />
-      </footer>
     </section>
   );
 };

@@ -1,5 +1,6 @@
 "use client";
 
+import SpringyText from "@/components/springy-text/SpringyText";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -9,6 +10,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
+import { CaretRight } from "@phosphor-icons/react";
 import { FormEvent, useState } from "react";
 
 export function NewsletterCard() {
@@ -21,9 +23,12 @@ export function NewsletterCard() {
   };
 
   return (
-    <Card>
+    <Card className="rounded-[32px]">
       <CardHeader>
-        <CardTitle>Empower your Web Dev Journey</CardTitle>
+        <SpringyText
+          className="justify-start text-2xl opacity-90 "
+          text={"Empower your Web Dev Journey"}
+        />
         <CardDescription>
           Join 1k+ developers getting tips, strategies, and resources that would
           help you succeed in your web dev journey.
@@ -32,16 +37,24 @@ export function NewsletterCard() {
       <CardFooter>
         <form
           onSubmit={handleSubmit}
-          className="flex flex-col xs:flex-row gap-2 w-full"
+          className="flex flex-col xs:flex-row gap-2 w-full mt-4 relative"
         >
           <Input
+            className="p-4 px-6 sm:p-5 sm:px-8 h-auto rounded-full"
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
             placeholder="Enter your email"
           />
-          <Button className="w-full xs:w-40">Join In</Button>
+          <div className="h-full absolute right-0 top-1/2 -translate-y-1/2 p-2 aspect-square sm:aspect-video">
+            <Button size="lg" className="h-full rounded-full p-2 w-full">
+              <span className="hidden sm:inline-block">Join In</span>
+              <span className="sm:hidden">
+                <CaretRight />
+              </span>
+            </Button>
+          </div>
         </form>
       </CardFooter>
     </Card>
