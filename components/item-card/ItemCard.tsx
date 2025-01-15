@@ -83,6 +83,7 @@ const ItemCard = ({ item }: ItemCardProps) => {
                 <Tooltip>
                   <TooltipTrigger asChild>
                     <button
+                      data-umami-event={`${item.title}'s Source Code Button`}
                       onClick={(e) => {
                         e.stopPropagation();
 
@@ -108,6 +109,7 @@ const ItemCard = ({ item }: ItemCardProps) => {
                 <Tooltip>
                   <TooltipTrigger asChild>
                     <button
+                      data-umami-event={`${item.title}'s Twitter Post Button`}
                       onClick={(e) => {
                         e.stopPropagation();
 
@@ -154,6 +156,7 @@ const ItemCard = ({ item }: ItemCardProps) => {
       condition={Boolean(item.link)}
       whenTrue={
         <Link
+          data-umami-event={`${item.title}'s Card`}
           rel="noopener noreferrer"
           scroll={true}
           target={item.isRoute ? "_self" : "_blank"}

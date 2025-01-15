@@ -7,6 +7,7 @@ import Footer from "@/sections/footer/footer";
 import Profile from "@/sections/profile/Profile";
 import BackgroundBricks from "@/components/ui/bg-bricks";
 import MouseSpotlight from "@/components/ui/mouse-spotlight";
+import Script from "next/script";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -53,6 +54,12 @@ export default function RootLayout({
         {children}
 
         <Toaster richColors closeButton />
+
+        <script
+          defer
+          src="https://cloud.umami.is/script.js"
+          data-website-id="4a6bdf23-cee1-40f9-911e-f202315680cb"
+        ></script>
       </body>
     </html>
   );

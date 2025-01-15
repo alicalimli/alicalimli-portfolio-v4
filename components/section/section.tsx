@@ -44,6 +44,7 @@ const Section = ({
         {!viewAllLink ? null : (
           <Button
             variant={"ghost"}
+            data-umami-event={`${title}'s View All Button`}
             asChild
             className="ml-auto flex items-center gap-2 text-sm text-muted-foreground group"
           >
@@ -57,6 +58,7 @@ const Section = ({
         {viewAllFunction && (
           <Button
             variant={"ghost"}
+            data-umami-event={`${title}'s View All Button`}
             onClick={() => viewAllFunction()}
             className="ml-auto flex items-center gap-2 text-sm text-muted-foreground group"
           >

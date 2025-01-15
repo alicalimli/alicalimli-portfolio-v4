@@ -28,6 +28,7 @@ const NewsletterSection = () => {
   const renderIssues = recentIssues.map((issue) => (
     <li className="item-card " key={issue.title}>
       <button
+        data-umami-event={`${issue.title}'s Card`}
         className="text-start w-full"
         onClick={() => {
           if (!issue?.id) return;

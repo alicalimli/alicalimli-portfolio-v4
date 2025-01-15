@@ -23,6 +23,7 @@ const SocialLinks = ({ className, iconSize }: SocialLinksProps) => {
         <Tooltip>
           <TooltipTrigger asChild>
             <a
+              data-umami-event={`${link}'s Social Button`}
               rel="noopener noreferrer"
               target="_blank"
               href={link}

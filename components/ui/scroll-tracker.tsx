@@ -64,6 +64,7 @@ const ScrollTracker = ({}: ScrollTrackerProps) => {
         return (
           <a
             key={s.id}
+            data-umami-event={`${s.label}'s Scroll to section button`}
             href={`#${s.id}`}
             className={cn(
               ` absolute left-1/2 -translate-x-1/2 ${s.top} rounded-full`
