@@ -50,7 +50,7 @@ const Profile = ({}: ProfileProps) => {
           Front-end Engineer
         </span>{" "}
         building high-quality and scalable web applications. Join 1K+ developers
-        learning tips and strategies from my journey:
+        learning tips and strategies from my journey :
       </p>
 
       <form
