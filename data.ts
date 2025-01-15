@@ -232,12 +232,12 @@ export const projects: ItemProps[] = [
     twitterTP: "Over 180+ Reviews on Twitter/X",
   },
   {
-    title: "Portfolio Website v2",
+    title: "Developer Portfolio Website",
     thumbnail:
       "https://firebasestorage.googleapis.com/v0/b/webdev-visuals.appspot.com/o/misc%2Faliv2-portfolio.webp?alt=media&token=e1d1e208-bf90-4556-b80e-4932656cbc07",
     sourceCode: "https://github.com/alicalimli/alicalimli-portfolio/",
     description:
-      "Designed and developed a minimalist portfolio showcasing my professional journey with smooth animations and optimal performance.",
+      "Designed and developed a minimalist portfolio template that showcases professional work through smooth animations and optimal performance. Now has been templatized to be used by other developers to present their own journeys.",
     cta: "Visit Website",
     role: "Design & Development",
     link: "https://v2.alicalimli.com/",
