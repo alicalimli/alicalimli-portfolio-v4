@@ -48,7 +48,11 @@ export function NewsletterCard() {
             placeholder="Enter your email"
           />
           <div className="h-full absolute right-0 top-1/2 -translate-y-1/2 p-2 aspect-square sm:aspect-video">
-            <Button size="lg" className="h-full rounded-full p-2 w-full">
+            <Button
+              data-umami-event={"JOIN Newsletter CARD Button "}
+              size="lg"
+              className="h-full rounded-full p-2 w-full"
+            >
               <span className="hidden sm:inline-block">Join In</span>
               <span className="sm:hidden">
                 <CaretRight />
