@@ -192,23 +192,23 @@ const ContactForm = ({}: ContactFormProps) => {
             </FormItem>
           )}
         />
+        <div className="absolute bottom-0 right-8 translate-y-1/2">
+          <Magnetic>
+            <Button
+              variant={"secondary"}
+              data-umami-event={"Send Message Button"}
+              disabled={isSending}
+              className="w-fit p-6 px-10 rounded-full h-auto justify-self-end"
+              type="submit"
+            >
+              <Conditional condition={isSending}>
+                <LoaderIcon className="animate-spin block w-5 mr-1" />
+              </Conditional>
+              Send Message
+            </Button>
+          </Magnetic>
+        </div>
       </form>
-
-      <div className="absolute bottom-0 right-8 translate-y-1/2">
-        <Magnetic>
-          <Button
-            variant={"secondary"}
-            disabled={isSending}
-            className="w-fit p-6 px-10 rounded-full h-auto justify-self-end"
-            type="submit"
-          >
-            <Conditional condition={isSending}>
-              <LoaderIcon className="animate-spin block w-5 mr-1" />
-            </Conditional>
-            Send Message
-          </Button>
-        </Magnetic>
-      </div>
     </Form>
   );
 };
